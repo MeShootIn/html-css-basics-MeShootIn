@@ -19,11 +19,12 @@
 <body>
     <main>
         <!-- Шпаргалка по Git -->
-        <h1>Шпаргалка по Git</h1>
+        <h1 class="text-center">Шпаргалка по Git</h1>
 
+        <!-- Введение -->
         <div>
             <p>
-                <img id="git-img" src="img/git.svg" alt="git">
+                <img class="img-left-align" src="img/git.svg" alt="git">
                 <u>Git</u> — распределённая система контроля версий, которая даёт возможность разработчикам отслеживать
                 изменения в файлах и работать над одним проектом совместно с коллегами. Она была разработана в 2005 году
                 Линусом Торвальдсом, создателем Linux, чтобы другие разработчики могли вносить свой вклад в ядро Linux.
@@ -32,6 +33,7 @@
             </p>
         </div>
 
+        <!-- Цитата -->
         <figure class="quote">
             <blockquote cite="https://lkml.org/lkml/2000/8/25/132">
                 Talk is cheap. Show me the <b>code</b>.
@@ -105,7 +107,7 @@
             </a>
             <table>
                 <caption>Различия между GitLab и GitHub</caption>
-                <thead>
+                <thead class="thead-ubuntu">
                     <tr>
                         <th>Параметры</th>
                         <th>GitLab</th>
@@ -661,22 +663,23 @@
     </main>
 
     <!-- Обратная связь -->
-    <div id="feedback" class="block">
-        <form action="mailto:dmitriimishutin@gmail.com" method="GET" target="_blank">
+    <div class="block">
+        <form class="feedback-form" action="mailto:dmitriimishutin@gmail.com" method="GET" target="_blank">
             <h2 class="title">📧 Оставьте отзыв о статье</h2>
 
             <input type="hidden" name="subject" value="Git cheat sheet">
             <div>
-                <label for="message-body">Сообщение</label>
+                <label for="message">Сообщение</label>
                 <br>
-                <textarea name="body" id="message-body"></textarea>
+                <textarea name="body" id="message"></textarea>
             </div>
             <div>
-                <input type="submit" value="Отправить">
+                <input type="submit" value="Отправить" onclick="onSubmit();">
             </div>
         </form>
     </div>
 
+    <!-- Подвал -->
     <footer>
         <hr>
         <p>
@@ -692,6 +695,9 @@
             </a>
         </p>
     </footer>
+
+    <!-- Скрипт обработки данных формы -->
+    <script async src="script/form.js"></script>
 </body>
 
 </html>

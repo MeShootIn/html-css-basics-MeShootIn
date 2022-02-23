@@ -8,12 +8,11 @@ main {
     margin: auto;
 }
 
-h1 {
+.text-center {
     text-align: center;
 }
 
-/* границы ячеек первого ряда таблицы */
-th {
+.thead-ubuntu tr th {
     background-color: #F1502F;
     color: white;
 }
@@ -22,7 +21,7 @@ th {
     background-color: lightgray;
 }
 
-#git-img {
+.img-left-align {
     /* Выравнивание по левому краю */
     float: left;
     margin: 7px 7px 7px 0;
@@ -36,18 +35,18 @@ th {
     text-align: right;
 }
 
-blockquote {
+.quote blockquote {
     margin: 0%;
     quotes: "“""”""‘""’";
     padding-right: 20px;
     border-right: 5px solid #F1502F;
 }
 
-blockquote p::before {
+.quote blockquote p::before {
     content: open-quote;
 }
 
-blockquote p::after {
+.quote blockquote p::after {
     content: close-quote;
 }
 
@@ -95,6 +94,7 @@ p {
     color: #F1502F;
 }
 
+/* Обычный блок */
 .block {
     padding-top: 3vh;
 }
@@ -128,12 +128,12 @@ ul li::before {
     text-align: center;
 }
 
-#feedback {
+.feedback-form {
     text-align: center;
     margin: auto;
 }
 
-#feedback input {
+.feedback-form input {
     display: inline-block;
     margin: 1vh auto;
     border: 3px solid #eee;
@@ -141,7 +141,7 @@ ul li::before {
     padding: 10px 20px;
 }
 
-#feedback textarea {
+.feedback-form textarea {
     display: inline-block;
     margin: 10px auto;
     border: 1px solid #eee;
@@ -150,7 +150,7 @@ ul li::before {
 }
 
 footer {
-    padding-top: 5vh;
+    padding-top: 10vh;
     text-align: center;
     color: gray;
 }
