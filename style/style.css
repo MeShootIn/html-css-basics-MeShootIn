@@ -1,0 +1,170 @@
+body {
+    margin: 1em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* границы ячеек первого ряда таблицы */
+th {
+    background-color: #F1502F;
+    color: white;
+}
+
+.even-tr {
+    background-color: lightgray;
+}
+
+#git-img {
+    /* Выравнивание по левому краю */
+    float: left;
+    margin: 7px 7px 7px 0;
+    text-align: center;
+    width: 10vw;
+    border: 3px solid #300a24;
+    border-radius: 3px;
+}
+
+.quote {
+    text-align: right;
+}
+
+blockquote {
+    margin: 0%;
+    quotes: "“""”""‘""’";
+    padding-right: 20px;
+    border-right: 5px solid #F1502F;
+}
+
+blockquote p::before {
+    content: open-quote;
+}
+
+blockquote p::after {
+    content: close-quote;
+}
+
+/* Терминал Ubuntu */
+code.terminal {
+    font-family: 'Ubuntu Mono', monospace;
+    background-color: #300a24;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+/* Знак доллара перед командой */
+.dollar-sign::selection {
+    background: transparent;
+}
+
+.dollar-sign::-moz-selection {
+    background: transparent;
+}
+
+/* Отступ у абзаца (красная строка) */
+p {
+    text-indent: 3vw;
+}
+
+/* Якорная ссылка */
+.anchor {
+    text-decoration: none;
+}
+
+.anchor:link {
+    color: #000000;
+}
+
+.anchor:visited {
+    color: #000000;
+}
+
+.anchor:hover {
+    color: #F1502F;
+}
+
+.anchor:active {
+    color: #F1502F;
+}
+
+.block {
+    padding-top: 3vh;
+}
+
+/* Описание заметки не нуждается в отступе */
+.note p {
+    text-indent: 0;
+}
+
+/* Описание блока не нуждается в отступе */
+.block-description p {
+    text-indent: 0;
+}
+
+/* Убираем существующие точки */
+ul {
+    list-style: none;
+}
+
+/* Точки маркированного списка */
+ul li::before {
+    content: "\2022";
+    color: red;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.ad {
+    background-color: lightgreen;
+    text-align: center;
+}
+
+#feedback {
+    text-align: center;
+    margin: auto;
+}
+
+#feedback input {
+    display: inline-block;
+    margin: 1vh auto;
+    border: 3px solid #eee;
+    border-radius: 3px;
+    padding: 10px 20px;
+}
+
+#feedback textarea {
+    display: inline-block;
+    margin: 10px auto;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    padding: 10px 20px;
+}
+
+footer {
+    padding-top: 5vh;
+    text-align: center;
+    color: gray;
+}
+
+footer hr {
+    border-top: 1px solid lightgray;
+}
+
+.icon-link {
+    text-decoration: none;
+}
+
+.footer-icon {
+    text-align: center;
+    width: 2%;
+    height: 2%;
+}
