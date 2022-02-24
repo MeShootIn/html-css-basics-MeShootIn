@@ -1,9 +1,9 @@
-body {
+.courier-new-font {
     margin: 1em;
     font-family: 'Courier New', Courier, monospace;
 }
 
-main {
+.main-fixed {
     max-width: 900px;
     margin: auto;
 }
@@ -17,16 +17,16 @@ main {
     color: white;
 }
 
-.even-tr {
+.striped-rows tr:nth-child(even) {
     background-color: lightgray;
 }
 
-.img-left-align {
+.img-left-wrap {
     /* Выравнивание по левому краю */
     float: left;
     margin: 7px 7px 7px 0;
     text-align: center;
-    width: 10vw;
+    width: 10%;
     border: 3px solid #300a24;
     border-radius: 3px;
 }
@@ -109,18 +109,8 @@ p {
     text-indent: 0;
 }
 
-/* Убираем существующие точки */
-ul {
-    list-style: none;
-}
-
-/* Точки маркированного списка */
-ul li::before {
-    content: "\2022";
+ul li::marker {
     color: red;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
 }
 
 .ad {
@@ -149,13 +139,13 @@ ul li::before {
     padding: 10px 20px;
 }
 
-footer {
+.footer-gray {
     padding-top: 10vh;
     text-align: center;
     color: gray;
 }
 
-footer hr {
+.footer-hr {
     border-top: 1px solid lightgray;
 }
 
