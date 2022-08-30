@@ -1,0 +1,15 @@
+@use "../common";
+
+
+.social-icon {
+  &__link {
+    @extend %text-no-decoration;
+  }
+
+  &__icon {
+    width: 36px;
+    height: 36px;
+
+    @extend %text-center;
+  }
+}

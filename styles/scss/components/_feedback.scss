@@ -1,0 +1,37 @@
+@use "../common";
+
+
+$-border-fill: solid #eee;
+
+%feedback-input {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 10px 20px;
+}
+
+.feedback-form {
+  padding-top: 3vh;
+  margin: auto;
+
+  @extend %text-center;
+
+  &__input {
+    label {
+      text-align: left;
+    }
+
+    textarea {
+      margin: 10px auto;
+      border: 1px $-border-fill;
+
+      @extend %feedback-input;
+    }
+  }
+
+  &__submit {
+    margin: 1vh auto;
+    border: 3px $-border-fill;
+
+    @extend %feedback-input;
+  }
+}
