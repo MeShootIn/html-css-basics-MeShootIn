@@ -1,0 +1,21 @@
+@use "../common";
+
+
+.quote {
+  text-align: right;
+
+  blockquote {
+    margin: 0;
+    quotes: "“" "”" "‘" "’";
+    padding-right: 1em;
+    border-right: 5px solid common.$ubuntu-orange;
+
+    &::before {
+      content: open-quote;
+    }
+
+    &::after {
+      content: close-quote;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@use "../common";
+
+
+.bottom-footer {
+  padding-top: 10vh;
+  color: gray;
+
+  @extend %text-center;
+
+  &__hr {
+    border-top: 1px solid lightgray;
+  }
+}

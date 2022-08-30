@@ -1,0 +1,57 @@
+@use "variables";
+@use "extends";
+
+
+// ANCHOR LINK
+
+$-anchor-color: black;
+
+.anchor {
+  @extend %text-no-decoration;
+}
+
+.anchor:link {
+  color: $-anchor-color;
+}
+
+.anchor:visited {
+  color: $-anchor-color;
+}
+
+.anchor:hover {
+  color: variables.$ubuntu-orange;
+}
+
+.anchor:active {
+  color: variables.$ubuntu-orange;
+}
+
+// UBUNTU TERMINAL
+
+.terminal {
+  font-family: 'Ubuntu Mono', monospace;
+  background-color: #300a24;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+
+  // Dollar sign before the command
+  .dollar-sign::selection {
+    background: transparent;
+  }
+
+  .dollar-sign::-moz-selection {
+    background: transparent;
+  }
+}
+
+// REGULAR BLOCK
+
+.block {
+  padding-top: 3vh;
+}
+
+// Block description does not need an indent
+.block__description {
+  text-indent: 0;
+}

@@ -1,160 +1,69 @@
-.courier-new-font {
+@use "common";
+@use "components/quote";
+@use "components/feedback";
+@use "components/bottom-footer";
+@use "components/social-icon";
+
+
+body {
   margin: 1em;
   font-family: 'Courier New', Courier, monospace;
 }
 
-.main-fixed {
+main {
   max-width: 900px;
   margin: auto;
+
+  h1 {
+    @extend %text-center;
+  }
 }
 
-.text-center {
-  text-align: center;
+ul {
+  li::marker {
+    color: red;
+  }
 }
 
-.thead-ubuntu tr th {
-  background-color: #F1502F;
-  color: white;
+// Paragraph indent (red line)
+p {
+  text-indent: 3vw;
 }
 
-.striped-rows tr:nth-child(even) {
-  background-color: lightgray;
+.comparison-table {
+  thead {
+    tr {
+      th {
+        background-color: common.$ubuntu-orange;
+        color: white;
+      }
+    }
+  }
+
+  tbody {
+    tr:nth-child(even) {
+      background-color: lightgray;
+    }
+  }
 }
 
-.img-left-wrap {
-  /* Left alignment */
+.git-logo {
   float: left;
   margin: 7px 7px 7px 0;
-  text-align: center;
   width: 10%;
   border: 3px solid #300a24;
   border-radius: 3px;
 }
 
-.quote {
-  text-align: right;
-}
-
-.quote blockquote {
-  margin: 0;
-  quotes: "“" "”" "‘" "’";
-  padding-right: 20px;
-  border-right: 5px solid #F1502F;
-}
-
-.quote blockquote p::before {
-  content: open-quote;
-}
-
-.quote blockquote p::after {
-  content: close-quote;
-}
-
-/* Ubuntu terminal */
-code.terminal {
-  font-family: 'Ubuntu Mono', monospace;
-  background-color: #300a24;
-  color: white;
-  padding: 5px;
-  border-radius: 3px;
-}
-
-/* Dollar sign before the command */
-.dollar-sign::selection {
-  background: transparent;
-}
-
-.dollar-sign::-moz-selection {
-  background: transparent;
-}
-
-/* Paragraph indent (red line) */
-p {
-  text-indent: 3vw;
-}
-
-/* Anchor link */
-.anchor {
-  text-decoration: none;
-}
-
-.anchor:link {
-  color: #000000;
-}
-
-.anchor:visited {
-  color: #000000;
-}
-
-.anchor:hover {
-  color: #F1502F;
-}
-
-.anchor:active {
-  color: #F1502F;
-}
-
-/* Regular block */
-.block {
-  padding-top: 3vh;
-}
-
-/* Note description does not need an indent */
-.note p {
-  text-indent: 0;
-}
-
-/* Block description does not need an indent */
-.block-description p {
-  text-indent: 0;
-}
-
-ul li::marker {
-  color: red;
+// Note does not need an indent
+.note {
+  p {
+    text-indent: 0;
+  }
 }
 
 .ad {
   background-color: lightgreen;
-  text-align: center;
-}
 
-.feedback-form {
-  text-align: center;
-  margin: auto;
-}
-
-.feedback-form input {
-  display: inline-block;
-  margin: 1vh auto;
-  border: 3px solid #eee;
-  border-radius: 3px;
-  padding: 10px 20px;
-}
-
-.feedback-form textarea {
-  display: inline-block;
-  margin: 10px auto;
-  border: 1px solid #eee;
-  border-radius: 3px;
-  padding: 10px 20px;
-}
-
-.footer-gray {
-  padding-top: 10vh;
-  text-align: center;
-  color: gray;
-}
-
-.footer-hr {
-  border-top: 1px solid lightgray;
-}
-
-.icon-link {
-  text-decoration: none;
-}
-
-.footer-icon {
-  text-align: center;
-  width: 2%;
-  height: 2%;
+  @extend %text-center;
 }
