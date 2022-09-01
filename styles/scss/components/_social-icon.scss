@@ -2,11 +2,11 @@
 
 
 .social-icon {
-  &__link {
+  #{&}__link {
     @extend %text-no-decoration;
   }
 
-  &__icon {
+  #{&}__icon {
     width: 36px;
     height: 36px;
 

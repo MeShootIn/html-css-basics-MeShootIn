@@ -7,7 +7,7 @@
 
   @extend %text-center;
 
-  &__hr {
+  #{&}__hr {
     border-top: 1px solid lightgray;
   }
 }
