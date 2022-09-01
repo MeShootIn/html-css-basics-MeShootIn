@@ -96,6 +96,9 @@ body {
   margin: 1em;
   font-family: "Courier New", Courier, monospace;
 }
+body p {
+  color: red;
+}
 
 main {
   max-width: 900px;

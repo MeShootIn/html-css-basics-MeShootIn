@@ -1,0 +1,5 @@
+# https://github.com/github/gitignore/blob/main/Sass.gitignore
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map

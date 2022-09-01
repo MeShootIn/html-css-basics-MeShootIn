@@ -15,7 +15,7 @@ $-border-fill: solid #eee;
 
   @extend %text-center;
 
-  &__input {
+  #{&}__input {
     label {
       text-align: left;
     }
@@ -28,7 +28,7 @@ $-border-fill: solid #eee;
     }
   }
 
-  &__submit {
+  #{&}__submit {
     margin: 1vh auto;
     border: 3px $-border-fill;
 

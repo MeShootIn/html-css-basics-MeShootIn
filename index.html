@@ -271,7 +271,8 @@
             </p>
             <p>
               <code
-                class="terminal"><span class="dollar-sign">$ </span>git config
+                class="terminal"><span class="terminal__dollar-sign">$ </span>git
+                config
                 --global user.name '&lt;имя&gt;'</code>
             </p>
           </div>
@@ -285,7 +286,8 @@
             </p>
             <p>
               <code
-                class="terminal"><span class="dollar-sign">$ </span>git config
+                class="terminal"><span class="terminal__dollar-sign">$ </span>git
+                config
                 --global user.email '&lt;адрес электронной почты&gt;'</code>
             </p>
           </div>
@@ -296,7 +298,8 @@
               Напрямую через редактирование конфига:
             </p>
             <p>
-              <code class="terminal"><span class="dollar-sign">$ </span>nano
+              <code class="terminal"><span
+                class="terminal__dollar-sign">$ </span>nano
                 ~/.gitconfig</code>
             </p>
           </div>
@@ -321,7 +324,8 @@
         Создаёт новый локальный репозиторий с заданным именем
       </p>
       <p>
-        <code class="terminal"><span class="dollar-sign">$ </span>git init
+        <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
+          init
           &lt;название проекта&gt;</code>
       </p>
     </div>
@@ -330,7 +334,8 @@
         Скачивает репозиторий вместе со всей его историей изменений
       </p>
       <p>
-        <code class="terminal"><span class="dollar-sign">$ </span>git clone
+        <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
+          clone
           &lt;url-адрес&gt;</code>
       </p>
     </div>
@@ -352,7 +357,8 @@
         Удаляет конкретный файл из рабочей директории и индексирует его удаление
       </p>
       <p>
-        <code class="terminal"><span class="dollar-sign">$ </span>git rm &lt;
+        <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
+          rm &lt;
           файл&gt;</code>
       </p>
     </div>
@@ -362,7 +368,8 @@
         на своём месте
       </p>
       <p>
-        <code class="terminal"><span class="dollar-sign">$ </span>git rm
+        <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
+          rm
           --cached &lt;файл&gt;</code>
       </p>
     </div>
@@ -373,7 +380,7 @@
       </p>
       <p>
         <code
-          class="terminal"><span class="dollar-sign">$ </span>git mv
+          class="terminal"><span class="terminal__dollar-sign">$ </span>git mv
           &lt;оригинальный файл&gt; &lt;новое имя&gt;</code>
       </p>
     </div>
@@ -396,7 +403,8 @@
       </p>
       <p>
         <code
-          class="terminal"><span class="dollar-sign">$ </span>git ls-files
+          class="terminal"><span class="terminal__dollar-sign">$ </span>git
+          ls-files
           --others --ignored --exclude-standard</code>
       </p>
     </div>
@@ -418,7 +426,7 @@
         Временно сохраняет все незафиксированные изменения отслеживаемых файлов
       </p>
       <p>
-        <code class="terminal"><span class="dollar-sign">$ </span>git
+        <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
           stash</code>
       </p>
     </div>
@@ -428,7 +436,7 @@
       </p>
       <p>
         <code class="terminal">
-          <span class="dollar-sign">$ </span>git stash pop
+          <span class="terminal__dollar-sign">$ </span>git stash pop
         </code>
       </p>
     </div>
@@ -438,7 +446,7 @@
       </p>
       <p>
         <code class="terminal">
-          <span class="dollar-sign">$ </span>git stash list
+          <span class="terminal__dollar-sign">$ </span>git stash list
         </code>
       </p>
     </div>
@@ -448,7 +456,7 @@
       </p>
       <p>
         <code class="terminal">
-          <span class="dollar-sign">$ </span>git stash drop
+          <span class="terminal__dollar-sign">$ </span>git stash drop
         </code>
       </p>
     </div>
@@ -470,7 +478,7 @@
         Перечисляет все новые или изменённые файлы, которые нуждаются в фиксации
       </p>
       <p>
-        <code class="terminal"><span class="dollar-sign">$ </span>git
+        <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
           status</code>
       </p>
     </div>
@@ -480,7 +488,7 @@
         файлах
       </p>
       <p>
-        <code class="terminal"><span class="dollar-sign">$ </span>git
+        <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
           diff</code>
       </p>
     </div>
@@ -490,7 +498,7 @@
       </p>
       <p>
         <code class="terminal">
-          <span class="dollar-sign">$ </span>git add &lt;файл&gt;
+          <span class="terminal__dollar-sign">$ </span>git add &lt;файл&gt;
         </code>
       </p>
     </div>
@@ -500,7 +508,8 @@
         версиями файлов
       </p>
       <p>
-        <code class="terminal"><span class="dollar-sign">$ </span>git diff
+        <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
+          diff
           --staged</code>
       </p>
     </div>
@@ -510,7 +519,7 @@
       </p>
       <p>
         <code class="terminal">
-          <span class="dollar-sign">$ </span>git reset &lt;файл&gt;
+          <span class="terminal__dollar-sign">$ </span>git reset &lt;файл&gt;
         </code>
       </p>
     </div>
@@ -520,7 +529,8 @@
       </p>
       <p>
         <code class="terminal">
-          <span class="dollar-sign">$ </span>git commit -m '&lt;сообщение с
+          <span class="terminal__dollar-sign">$ </span>git commit -m '&lt;сообщение
+          с
           описанием&gt;'
         </code>
       </p>
@@ -543,7 +553,7 @@
         Список именованных веток коммитов с указанием выбранной ветки
       </p>
       <p>
-        <code class="terminal"><span class="dollar-sign">$ </span>git
+        <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
           branch</code>
       </p>
     </div>
@@ -552,7 +562,8 @@
         Создаёт новую ветку
       </p>
       <p>
-        <code class="terminal"><span class="dollar-sign">$ </span>git branch
+        <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
+          branch
           &lt;имя ветки&gt;</code>
       </p>
     </div>
@@ -562,7 +573,8 @@
         состояния
       </p>
       <p>
-        <code class="terminal"><span class="dollar-sign">$ </span>git switch -c
+        <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
+          switch -c
           &lt;имя ветки&gt;</code>
       </p>
     </div>
@@ -571,7 +583,8 @@
         Вносит изменения указанной ветки в текущую ветку
       </p>
       <p>
-        <code class="terminal"><span class="dollar-sign">$ </span>git merge &lt;имя
+        <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
+          merge &lt;имя
           ветки&gt;</code>
       </p>
     </div>
@@ -580,7 +593,8 @@
         Удаляет выбранную ветку
       </p>
       <p>
-        <code class="terminal"><span class="dollar-sign">$ </span>git branch -d
+        <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
+          branch -d
           &lt;имя ветки&gt;</code>
       </p>
     </div>
@@ -603,7 +617,7 @@
       </p>
       <p>
         <code
-          class="terminal"><span class="dollar-sign">$ </span>git log
+          class="terminal"><span class="terminal__dollar-sign">$ </span>git log
           [--oneline] # [упрощённый вид]</code>
       </p>
     </div>
@@ -612,7 +626,8 @@
         История изменений конкретного файла, включая его переименование
       </p>
       <p>
-        <code class="terminal"><span class="dollar-sign">$ </span>git log
+        <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
+          log
           --follow &lt;файл&gt;</code>
       </p>
     </div>
@@ -622,7 +637,8 @@
       </p>
       <p>
         <code
-          class="terminal"><span class="dollar-sign">$ </span>git diff &lt;первая
+          class="terminal"><span class="terminal__dollar-sign">$ </span>git diff
+          &lt;первая
           ветка&gt;...&lt;вторая ветка&gt;</code>
       </p>
     </div>
@@ -632,7 +648,7 @@
       </p>
       <p>
         <code class="terminal">
-          <span class="dollar-sign">$ </span>git show &lt;коммит&gt;
+          <span class="terminal__dollar-sign">$ </span>git show &lt;коммит&gt;
         </code>
       </p>
     </div>
@@ -656,7 +672,7 @@
       </p>
       <p>
         <code class="terminal">
-          <span class="dollar-sign">$ </span>git reset &lt;коммит&gt;
+          <span class="terminal__dollar-sign">$ </span>git reset &lt;коммит&gt;
         </code>
       </p>
     </div>
@@ -666,7 +682,8 @@
         указанного коммита
       </p>
       <p>
-        <code class="terminal"><span class="dollar-sign">$ </span>git reset
+        <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
+          reset
           --hard &lt;коммит&gt;</code>
       </p>
     </div>
@@ -689,7 +706,8 @@
       </p>
       <p>
         <code class="terminal">
-          <span class="dollar-sign">$ </span>git fetch &lt;удалённый репозиторий&gt;
+          <span class="terminal__dollar-sign">$ </span>git fetch &lt;удалённый
+          репозиторий&gt;
         </code>
       </p>
     </div>
@@ -700,7 +718,8 @@
       </p>
       <p>
         <code
-          class="terminal"><span class="dollar-sign">$ </span>git merge &lt;удалённый
+          class="terminal"><span class="terminal__dollar-sign">$ </span>git
+          merge &lt;удалённый
           репозиторий&gt;/&lt;ветка&gt;</code>
       </p>
     </div>
@@ -710,7 +729,8 @@
       </p>
       <p>
         <code class="terminal">
-          <span class="dollar-sign">$ </span>git push &lt;удалённый репозиторий&gt;
+          <span class="terminal__dollar-sign">$ </span>git push &lt;удалённый
+          репозиторий&gt;
           &lt;ветка&gt;
         </code>
       </p>
@@ -722,7 +742,7 @@
         merge
       </p>
       <p>
-        <code class="terminal"><span class="dollar-sign">$ </span>git
+        <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
           pull</code>
       </p>
     </div>
