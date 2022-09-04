@@ -36,7 +36,7 @@ $-anchor-color: black;
   padding: 5px;
   border-radius: 3px;
 
-  // Dollar sign before the command
+  // Dollar sign before the command.
   #{&}__dollar-sign::selection {
     background: transparent;
   }
@@ -52,8 +52,17 @@ $-anchor-color: black;
 .block {
   padding-top: 3vh;
 
-  // Block description does not need an indent
+  // Block description does not need an indent.
   #{&}__description {
     text-indent: 0;
   }
+}
+
+
+// AD
+
+.ad {
+  background-color: lightgreen;
+
+  @extend %text-center;
 }

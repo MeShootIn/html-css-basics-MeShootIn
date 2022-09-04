@@ -1,8 +1,12 @@
-function onSubmit() {
-  const form = document.getElementById('feedback-form');
+const form = document.querySelector('.feedback-form');
+
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+
   const inputs = form.elements;
 
   inputs['subject'].value = decodeURI(inputs['subject'].value);
-  inputs['message'].value = decodeURI(inputs['message'].value);
+  inputs['body'].value = decodeURI(inputs['body'].value);
+
   form.submit();
-}
+})

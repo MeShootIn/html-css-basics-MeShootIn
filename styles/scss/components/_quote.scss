@@ -10,11 +10,11 @@
     padding-right: 1em;
     border-right: 5px solid common.$ubuntu-orange;
 
-    #{&}::before {
+    &::before {
       content: open-quote;
     }
 
-    #{&}::after {
+    &::after {
       content: close-quote;
     }
   }

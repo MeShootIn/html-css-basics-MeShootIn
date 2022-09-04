@@ -12,7 +12,8 @@ body {
 
 main {
   max-width: 900px;
-  margin: auto;
+  // Align to the center of the screen (horizontally).
+  margin: 0 auto;
 
   h1 {
     @extend %text-center;
@@ -25,9 +26,9 @@ ul {
   }
 }
 
-// Paragraph indent (red line)
+// Paragraph indent (red line).
 p {
-  text-indent: 3vw;
+  text-indent: 4em;
 }
 
 .comparison-table {
@@ -56,14 +57,8 @@ p {
 }
 
 .note {
-  // Note paragraph does not need an indent
+  // Note paragraph does not need an indent.
   p {
     text-indent: 0;
   }
-}
-
-.ad {
-  background-color: lightgreen;
-
-  @extend %text-center;
 }
