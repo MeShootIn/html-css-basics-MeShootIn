@@ -15,7 +15,7 @@ $-border-fill: solid #eee;
 
   @extend %text-center;
 
-  #{&}__input {
+  #{&}__input-section {
     label {
       text-align: left;
     }

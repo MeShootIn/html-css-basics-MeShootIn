@@ -1,5 +1,5 @@
 @charset "UTF-8";
-main h1, .ad, .social-icon .social-icon__icon, .bottom-footer, .feedback-form {
+main h1, .social-icon .social-icon__icon, .bottom-footer, .feedback-form, .ad {
   text-align: center;
 }
 
@@ -41,6 +41,10 @@ main h1, .ad, .social-icon .social-icon__icon, .bottom-footer, .feedback-form {
   text-indent: 0;
 }
 
+.ad {
+  background-color: lightgreen;
+}
+
 .quote {
   text-align: right;
 }
@@ -50,14 +54,14 @@ main h1, .ad, .social-icon .social-icon__icon, .bottom-footer, .feedback-form {
   padding-right: 1em;
   border-right: 5px solid #F1502F;
 }
-.quote blockquote .quote blockquote::before {
+.quote blockquote::before {
   content: open-quote;
 }
-.quote blockquote .quote blockquote::after {
+.quote blockquote::after {
   content: close-quote;
 }
 
-.feedback-form .feedback-form__submit, .feedback-form .feedback-form__input textarea {
+.feedback-form .feedback-form__submit, .feedback-form .feedback-form__input-section textarea {
   display: inline-block;
   border-radius: 3px;
   padding: 10px 20px;
@@ -67,10 +71,10 @@ main h1, .ad, .social-icon .social-icon__icon, .bottom-footer, .feedback-form {
   padding-top: 3vh;
   margin: auto;
 }
-.feedback-form .feedback-form__input label {
+.feedback-form .feedback-form__input-section label {
   text-align: left;
 }
-.feedback-form .feedback-form__input textarea {
+.feedback-form .feedback-form__input-section textarea {
   margin: 10px auto;
   border: 1px solid #eee;
 }
@@ -99,14 +103,14 @@ body {
 
 main {
   max-width: 900px;
-  margin: auto;
+  margin: 0 auto;
 }
 ul li::marker {
   color: red;
 }
 
 p {
-  text-indent: 3vw;
+  text-indent: 4em;
 }
 
 .comparison-table thead tr th {
@@ -127,10 +131,6 @@ p {
 
 .note p {
   text-indent: 0;
-}
-
-.ad {
-  background-color: lightgreen;
 }
 
 /*# sourceMappingURL=index.css.map */
