@@ -6,7 +6,6 @@
 
 
 body {
-  margin: 1em;
   font-family: 'Courier New', Courier, monospace;
 }
 
@@ -31,6 +30,29 @@ p {
   text-indent: 4em;
 }
 
+
+// INTRODUCTION
+
+.introduction {
+  margin-top: 1em;
+}
+
+.introduction-container {
+  display: grid;
+  grid-gap: 5px;
+}
+
+.git-logo {
+  float: left;
+  margin: 7px 7px 7px 0;
+  width: 10%;
+
+  border-width: 3px;
+  border-style: solid;
+  border-color: #300a24;
+  border-radius: 3px;
+}
+
 .comparison-table {
   thead {
     tr {
@@ -48,18 +70,32 @@ p {
   }
 }
 
-.git-logo {
-  float: left;
-  margin: 7px 7px 7px 0;
-  width: 10%;
-  border: 3px solid #300a24;
-  border-radius: 3px;
+
+// TIPS
+
+.tips {
+  margin-top: 30px;
 }
 
-.note {
-  // Note paragraph does not need an indent.
-  p {
+.tip-container {
+  display: grid;
+  grid-gap: 20px;
+}
+
+.tip {
+  padding: 1em;
+  background-color: lightgray;
+  border-radius: 5px;
+
+  & * {
     text-indent: 0;
   }
+}
+
+
+// AD
+
+.ad-index {
+  margin-top: 10px;
 }
 

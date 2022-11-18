@@ -53,23 +53,12 @@ $-anchor-color: black;
 }
 
 
-// REGULAR BLOCK
-
-.block {
-  padding-top: 3vh;
-
-  // Block description does not need an indent.
-  #{&}__description {
-    text-indent: 0;
-  }
-}
-
-
 // AD
 
 .ad {
   @extend %text-center;
 
+  padding: 5px;
   background-color: lightgreen;
 }
 

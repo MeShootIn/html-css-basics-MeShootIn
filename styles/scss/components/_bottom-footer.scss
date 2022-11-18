@@ -8,7 +8,9 @@
   color: gray;
 
   #{&}__hr {
-    border-top: 1px solid lightgray;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: lightgray;
   }
 }
 

@@ -8,7 +8,10 @@
     margin: 0;
     quotes: "“" "”" "‘" "’";
     padding-right: 1em;
-    border-right: 5px solid common.$ubuntu-orange;
+
+    border-right-width: 5px;
+    border-right-style: solid;
+    border-right-color: common.$ubuntu-orange;
 
     &::before {
       content: open-quote;

@@ -19,739 +19,801 @@
 <body>
 <noscript>JavaScript отключён или не поддерживается Вашим браузером!</noscript>
 
+<!-- Main content -->
 <main>
   <!-- Git cheat sheet -->
   <h1>Шпаргалка по Git</h1>
 
-  <!-- Introduction -->
-  <p>
-    <img class="git-logo" src="./images/git.svg" alt="git">
+  <section class="introduction">
+    <div class="introduction-container">
+      <!-- Introduction -->
+      <section>
+        <a class="anchor" href="#description">
+          <h2 id="description">Описание</h2>
+        </a>
+        <p>
+          <img class="git-logo" src="./images/git.svg" alt="git">
 
-    <strong>Git</strong> — распределённая система контроля версий, которая даёт
-    возможность разработчикам отслеживать изменения в файлах и работать над
-    одним проектом совместно с коллегами. Она была разработана в 2005 году
-    Линусом Торвальдсом, создателем Linux, чтобы другие разработчики могли
-    вносить свой вклад в ядро Linux.
-    <em>Git</em> известен своей скоростью, простым дизайном, поддержкой
-    нелинейной разработки, полной децентрализацией и возможностью эффективно
-    работать с большими проектами.
-  </p>
+          <strong>Git</strong> — распределённая система контроля версий, которая
+          даёт возможность разработчикам отслеживать изменения в файлах и
+          работать над
+          одним проектом совместно с коллегами. Она была разработана в 2005 году
+          Линусом Торвальдсом, создателем Linux, чтобы другие разработчики могли
+          вносить свой вклад в ядро Linux.
+          <em>Git</em> известен своей скоростью, простым дизайном, поддержкой
+          нелинейной разработки, полной децентрализацией и возможностью
+          эффективно
+          работать с большими проектами.
+        </p>
 
-  <!-- Quote -->
-  <figure class="quote">
-    <blockquote cite="https://lkml.org/lkml/2000/8/25/132">
-      Talk is cheap. Show me the <b>code</b>.
-    </blockquote>
-    <figcaption>&mdash; Линус Торвальдс, <cite>Письмо из архива Linux kernel
-      mailing list</cite></figcaption>
-  </figure>
+        <!-- Quote -->
+        <figure class="quote">
+          <blockquote cite="https://lkml.org/lkml/2000/8/25/132">
+            Talk is cheap. Show me the <b>code</b>.
+          </blockquote>
+          <figcaption>&mdash; Линус Торвальдс, <cite>Письмо из архива Linux
+            kernel
+            mailing list</cite></figcaption>
+        </figure>
+      </section>
 
-  <!-- Which web service to choose? -->
-  <div class="block">
-    <a class="anchor" href="#choice">
-      <h2 id="choice">Какой веб-сервис выбрать?</h2>
-    </a>
-    <p>
-      Разработчики в определенный момент становятся перед выбором, какой сервис
-      для системы контроля версий выбрать. И даже самые опытные чаще всего
-      колеблются: <em>GitHub</em> или <em>GitLab</em>?
-    </p>
+      <!-- Which web service to choose? -->
+      <section>
+        <a class="anchor" href="#choice">
+          <h2 id="choice">Какой веб-сервис выбрать?</h2>
+        </a>
+        <p>
+          Разработчики в определенный момент становятся перед выбором, какой
+          сервис
+          для системы контроля версий выбрать. И даже самые опытные чаще всего
+          колеблются: <em>GitHub</em> или <em>GitLab</em>?
+        </p>
 
-    <a class="anchor" href="#choice-gitlab">
-      <h3 id="choice-gitlab">GitLab</h3>
-    </a>
-    <p>
-      <strong>GitLab</strong> — это инструмент управления хостингом репозитория,
-      разработанный GitLab Inc и используемый в процессе разработки программного
-      обеспечения. Он предоставляет различные средства управления, с помощью
-      которых мы можем оптимизировать совместный рабочий процесс для завершения
-      жизненного цикла разработки программного обеспечения. Это также позволяет
-      нам импортировать репозиторий из Google Code, Bitbucket и т.д.
-    </p>
-    <p>
-      Ниже приведены некоторые особенности <em>GitLab</em>:
-    </p>
-    <ul>
-      <li>Платформа управления репозиторием Community Edition с открытым
-        исходным кодом.
-      </li>
-      <li>Простое обслуживание репозитория на сервере.</li>
-      <li>Предлагает такие инструменты, как групповые вехи, отслеживание времени
-        и отслеживание проблем и т.д. для эффективного развития.
-      </li>
-      <li>Более спонтанный пользовательский интерфейс и функции
-        аутентификации.
-      </li>
-      <li>Расширены права доступа пользователей и защита ветвей.</li>
-    </ul>
-    <p>
-      <a href="https://about.gitlab.com" target="_blank"
-         rel="nofollow noopener noreferrer">GitLab</a>
-    </p>
-
-    <a class="anchor" href="#choice-github">
-      <h3 id="choice-github">GitHub</h3>
-    </a>
-    <p>
-      <strong>GitHub</strong> — это инструмент службы размещения репозитория,
-      который
-      обеспечивает совместную работу и контроль доступа. Это платформа, на
-      которой программисты могут вместе исправлять ошибки и размещать проекты с
-      открытым исходным кодом. <em>GitHub</em> предназначен для разработчиков и
-      помогает им отслеживать свои изменения в проекте через репозиторий.
-    </p>
-    <p>
-      Ниже приведены некоторые особенности <em>GitHub</em>:
-    </p>
-    <ul>
-      <li>Указывает вехи и метки для проектов.</li>
-      <li>Допускается просмотр сравнения между ветвями.</li>
-      <li>
-        <em>GitHub Pages</em> позволяет нам публиковать и размещать веб-сайты
-        на <em>GitHub</em>.
-      </li>
-      <li>Функция подсветки синтаксиса.</li>
-      <li>Он позволяет интегрировать сторонние API для отслеживания ошибок и
-        облачного хостинга.
-      </li>
-    </ul>
-    <p>
-      <a href="https://github.com" target="_blank"
-         rel="nofollow noopener noreferrer">GitHub</a>
-    </p>
-
-    <a class="anchor" href="#your-choice">
-      <h3 id="your-choice">Решать Вам</h3>
-    </a>
-    <table class="comparison-table">
-      <caption>Различия между GitLab и GitHub на
-        <time datetime="2022-07-12">12 июля 2022 г.</time>
-      </caption>
-
-      <thead>
-      <tr>
-        <th>Параметры</th>
-        <th>GitLab</th>
-        <th>GitHub</th>
-      </tr>
-      </thead>
-
-      <tbody>
-      <tr>
-        <td>Разработан</td>
-        <td>GitLab разработали Дмитрий Запорожец и Валерий Сизов.</td>
-        <td>GitHub был разработан Крисом Ванстратом, Томом Престон-Вернером, Пи
-          Джей Хайеттом и Скоттом Чаконом.
-        </td>
-      </tr>
-      <tr>
-        <td>Open-sourced</td>
-        <td>GitLab — это версия с Open-sourced кодом для сообщества.</td>
-        <td>GitHub не является Open-sourced.</td>
-      </tr>
-      <tr>
-        <td>Приватный репозиторий</td>
-        <td>GitLab предоставляет бесплатный частный репозиторий.</td>
-        <td>GitHub позволяет пользователям иметь бесплатный частный репозиторий,
-          но с не более чем тремя соавторами.
-        </td>
-      </tr>
-      <tr>
-        <td>Навигация</td>
-        <td>GitLab предоставляет возможность навигации по репозиторию.</td>
-        <td>GitHub позволяет пользователям перемещаться по юзабилити.</td>
-      </tr>
-      <tr>
-        <td>Анализ проекта</td>
-        <td>GitLab предоставляет пользователю возможность просматривать
-          диаграммы развития проекта.
-        </td>
-        <td>На GitHub пока нет этой функции, но есть возможность проверять
-          историю коммитов.
-        </td>
-      </tr>
-      <tr>
-        <td>Преимущества</td>
-        <td>
-          <ul>
-            <li>GitLab находится в свободном доступе и является Open-sourced для
-              сообщества.
-            </li>
-            <li>Это облачное приложение с высокой степенью безопасности.</li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li>Помогает нам создать организованный документ для проекта.</li>
-            <li>Он используется для обмена работой перед публикой.</li>
-          </ul>
-        </td>
-      </tr>
-      <tr>
-        <td>Недостатки</td>
-        <td>
-          <ul>
-            <li>GitLab доступен с множеством ошибок, и это делает работу
-              пользователя неаккуратной.
-            </li>
-            <li>Новичкам сложно управлять код-ревью.</li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li>Существует ограниченный частный репозиторий.</li>
-            <li>Он поддерживает только контроль версий Git.</li>
-          </ul>
-        </td>
-      </tr>
-      <tr>
-        <td>Компания</td>
-        <td>Принадлежит GitLab Inc.</td>
-        <td>Принадлежит корпорации Microsoft.</td>
-      </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <!-- Git installation -->
-  <div class="block">
-    <a class="anchor" href="#installation">
-      <h2 id="installation">Установка Git</h2>
-    </a>
-    <p>
-      GitHub предоставляет оконное приложение с графическим интерфейсом
-      для выполнения основных операций с репозиторием, и консольную версию <em>
-      Git</em>с автоматическими обновлениями для расширенных сценариев работы.
-    </p>
-
-    <a class="anchor" href="#github-desktop">
-      <h3 id="github-desktop">GitHub Desktop</h3>
-    </a>
-    <div>
-      <p>
-        Дистрибутивы <em>Git</em> для систем Linux и POSIX доступны на
-        официальном сайте Git SCM.
-      </p>
-      <p>
-        <a href="https://desktop.github.com" target="_blank"
-           rel="nofollow noopener noreferrer">desktop.github.com</a>
-      </p>
-    </div>
-
-    <a class="anchor" href="#all-platforms">
-      <h3 id="all-platforms">Git для всех платформ</h3>
-    </a>
-    <div>
-      <p>
-        <a href="https://git-scm.com" target="_blank"
-           rel="nofollow noopener noreferrer">git-scm.com</a>
-      </p>
-    </div>
-  </div>
-
-  <!-- Initial setup -->
-  <div class="block">
-    <a class="anchor" href="#initial-setup">
-      <h2 id="initial-setup">Первоначальная настройка</h2>
-    </a>
-    <p class="block__description">
-      Настройка информации о пользователе для всех локальных репозиториев
-    </p>
-
-    <hr>
-
-    <div class="note">
-      <p>
-        Произвести настройку можно двумя способами:
-      </p>
-      <ol>
-        <li>
+        <div>
+          <a class="anchor" href="#choice-gitlab">
+            <h3 id="choice-gitlab">GitLab</h3>
+          </a>
           <p>
-            С помощью команд вида <code class="terminal">git config
-            --global</code>:
+            <strong>GitLab</strong> — это инструмент управления хостингом
+            репозитория,
+            разработанный GitLab Inc и используемый в процессе разработки
+            программного
+            обеспечения. Он предоставляет различные средства управления, с
+            помощью
+            которых мы можем оптимизировать совместный рабочий процесс для
+            завершения
+            жизненного цикла разработки программного обеспечения. Это также
+            позволяет
+            нам импортировать репозиторий из Google Code, Bitbucket и т.д.
           </p>
-          <div class="note">
-            <p>
-              Устанавливает имя, которое будет отображаться в поле автора у
-              выполняемых Вами
-              коммитов
-            </p>
-            <p>
-              <code
-                class="terminal"><span class="terminal__dollar-sign">$ </span>
-                git config --global user.name '&lt;имя&gt;'</code>
-            </p>
-          </div>
-          <div class="note">
-            <p>
-              Устанавливает адрес электронной почты, который будет отображаться
-              в информации о выполняемых Вами коммитах
-            </p>
-            <p>
-              <code
-                class="terminal"><span class="terminal__dollar-sign">$
+          <p>
+            Ниже приведены некоторые особенности <em>GitLab</em>:
+          </p>
+          <ul>
+            <li>Платформа управления репозиторием Community Edition с открытым
+              исходным кодом.
+            </li>
+            <li>Простое обслуживание репозитория на сервере.</li>
+            <li>Предлагает такие инструменты, как групповые вехи, отслеживание
+              времени
+              и отслеживание проблем и т.д. для эффективного развития.
+            </li>
+            <li>Более спонтанный пользовательский интерфейс и функции
+              аутентификации.
+            </li>
+            <li>Расширены права доступа пользователей и защита ветвей.</li>
+          </ul>
+          <p>
+            <a href="https://about.gitlab.com" target="_blank"
+               rel="nofollow noopener noreferrer">GitLab</a>
+          </p>
+        </div>
+
+        <div>
+          <a class="anchor" href="#choice-github">
+            <h3 id="choice-github">GitHub</h3>
+          </a>
+          <p>
+            <strong>GitHub</strong> — это инструмент службы размещения
+            репозитория,
+            который
+            обеспечивает совместную работу и контроль доступа. Это платформа, на
+            которой программисты могут вместе исправлять ошибки и размещать
+            проекты с
+            открытым исходным кодом. <em>GitHub</em> предназначен для
+            разработчиков и
+            помогает им отслеживать свои изменения в проекте через репозиторий.
+          </p>
+          <p>
+            Ниже приведены некоторые особенности <em>GitHub</em>:
+          </p>
+          <ul>
+            <li>Указывает вехи и метки для проектов.</li>
+            <li>Допускается просмотр сравнения между ветвями.</li>
+            <li>
+              <em>GitHub Pages</em> позволяет нам публиковать и размещать
+              веб-сайты
+              на <em>GitHub</em>.
+            </li>
+            <li>Функция подсветки синтаксиса.</li>
+            <li>Он позволяет интегрировать сторонние API для отслеживания ошибок
+              и
+              облачного хостинга.
+            </li>
+          </ul>
+          <p>
+            <a href="https://github.com" target="_blank"
+               rel="nofollow noopener noreferrer">GitHub</a>
+          </p>
+        </div>
+
+        <div>
+          <a class="anchor" href="#your-choice">
+            <h3 id="your-choice">Решать Вам</h3>
+          </a>
+          <table class="comparison-table">
+            <caption>Различия между GitLab и GitHub на
+              <time datetime="2022-07-12">12 июля 2022 г.</time>
+            </caption>
+
+            <thead>
+            <tr>
+              <th>Параметры</th>
+              <th>GitLab</th>
+              <th>GitHub</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+              <td>Разработан</td>
+              <td>GitLab разработали Дмитрий Запорожец и Валерий Сизов.</td>
+              <td>GitHub был разработан Крисом Ванстратом, Томом
+                Престон-Вернером, Пи
+                Джей Хайеттом и Скоттом Чаконом.
+              </td>
+            </tr>
+            <tr>
+              <td>Open-sourced</td>
+              <td>GitLab — это версия с Open-sourced кодом для сообщества.</td>
+              <td>GitHub не является Open-sourced.</td>
+            </tr>
+            <tr>
+              <td>Приватный репозиторий</td>
+              <td>GitLab предоставляет бесплатный частный репозиторий.</td>
+              <td>GitHub позволяет пользователям иметь бесплатный частный
+                репозиторий,
+                но с не более чем тремя соавторами.
+              </td>
+            </tr>
+            <tr>
+              <td>Навигация</td>
+              <td>GitLab предоставляет возможность навигации по репозиторию.
+              </td>
+              <td>GitHub позволяет пользователям перемещаться по юзабилити.</td>
+            </tr>
+            <tr>
+              <td>Анализ проекта</td>
+              <td>GitLab предоставляет пользователю возможность просматривать
+                диаграммы развития проекта.
+              </td>
+              <td>На GitHub пока нет этой функции, но есть возможность проверять
+                историю коммитов.
+              </td>
+            </tr>
+            <tr>
+              <td>Преимущества</td>
+              <td>
+                <ul>
+                  <li>GitLab находится в свободном доступе и является
+                    Open-sourced для
+                    сообщества.
+                  </li>
+                  <li>Это облачное приложение с высокой степенью безопасности.
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>Помогает нам создать организованный документ для
+                    проекта.
+                  </li>
+                  <li>Он используется для обмена работой перед публикой.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>Недостатки</td>
+              <td>
+                <ul>
+                  <li>GitLab доступен с множеством ошибок, и это делает работу
+                    пользователя неаккуратной.
+                  </li>
+                  <li>Новичкам сложно управлять код-ревью.</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>Существует ограниченный частный репозиторий.</li>
+                  <li>Он поддерживает только контроль версий Git.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>Компания</td>
+              <td>Принадлежит GitLab Inc.</td>
+              <td>Принадлежит корпорации Microsoft.</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Git installation -->
+      <section>
+        <a class="anchor" href="#installation">
+          <h2 id="installation">Установка Git</h2>
+        </a>
+        <p>
+          GitHub предоставляет оконное приложение с графическим интерфейсом
+          для выполнения основных операций с репозиторием, и консольную версию
+          <em>
+            Git</em>с автоматическими обновлениями для расширенных сценариев
+          работы.
+        </p>
+
+        <div>
+          <a class="anchor" href="#github-desktop">
+            <h3 id="github-desktop">GitHub Desktop</h3>
+          </a>
+          <p>
+            Дистрибутивы <em>Git</em> для систем Linux и POSIX доступны на
+            официальном сайте Git SCM.
+          </p>
+          <p>
+            <a href="https://desktop.github.com" target="_blank"
+               rel="nofollow noopener noreferrer">desktop.github.com</a>
+          </p>
+        </div>
+
+        <div>
+          <a class="anchor" href="#all-platforms">
+            <h3 id="all-platforms">Git для всех платформ</h3>
+          </a>
+          <p>
+            <a href="https://git-scm.com" target="_blank"
+               rel="nofollow noopener noreferrer">git-scm.com</a>
+          </p>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <section class="tips">
+    <div class="tip-container">
+      <!-- Initial setup -->
+      <article class="tip">
+        <a class="anchor" href="#initial-setup">
+          <h2 id="initial-setup">Первоначальная настройка</h2>
+        </a>
+        <p>
+          Настройка информации о пользователе для всех локальных репозиториев
+        </p>
+
+        <hr>
+
+        <div>
+          <p>
+            Произвести настройку можно двумя способами:
+          </p>
+          <ol>
+            <li>
+              <p>
+                С помощью команд вида <code class="terminal">git config
+                --global</code>:
+              </p>
+              <div>
+                <p>
+                  Устанавливает имя, которое будет отображаться в поле автора у
+                  выполняемых Вами
+                  коммитов
+                </p>
+                <p>
+                  <code
+                    class="terminal"><span
+                    class="terminal__dollar-sign">$ </span>
+                    git config --global user.name '&lt;имя&gt;'</code>
+                </p>
+              </div>
+              <div>
+                <p>
+                  Устанавливает адрес электронной почты, который будет
+                  отображаться
+                  в информации о выполняемых Вами коммитах
+                </p>
+                <p>
+                  <code
+                    class="terminal"><span class="terminal__dollar-sign">$
               </span>git config --global user.email '&lt;адрес электронной почты
-                &gt;'</code>
-            </p>
-          </div>
-        </li>
-        <li>
-          <div class="note">
-            <p>
-              Напрямую через редактирование конфига:
-            </p>
-            <p>
-              <code class="terminal"><span
-                class="terminal__dollar-sign">$ </span>nano
-                ~/.gitconfig</code>
-            </p>
-          </div>
-        </li>
-      </ol>
-    </div>
-  </div>
+                    &gt;'</code>
+                </p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <p>
+                  Напрямую через редактирование конфига:
+                </p>
+                <p>
+                  <code class="terminal"><span
+                    class="terminal__dollar-sign">$ </span>nano
+                    ~/.gitconfig</code>
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </article>
 
-  <!-- Creating a repository -->
-  <div class="block">
-    <a class="anchor" href="#init-repo">
-      <h2 id="init-repo">Создание репозитория</h2>
-    </a>
-    <p class="block__description">
-      Создание нового репозитория или получение его по существующему URL-адресу
-    </p>
+      <!-- Creating a repository -->
+      <article class="tip">
+        <a class="anchor" href="#init-repo">
+          <h2 id="init-repo">Создание репозитория</h2>
+        </a>
+        <p>
+          Создание нового репозитория или получение его по существующему
+          URL-адресу
+        </p>
 
-    <hr>
+        <hr>
 
-    <div class="note">
-      <p>
-        Создаёт новый локальный репозиторий с заданным именем
-      </p>
-      <p>
-        <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
-          init
-          &lt;название проекта&gt;</code>
-      </p>
-    </div>
-    <div class="note">
-      <p>
-        Скачивает репозиторий вместе со всей его историей изменений
-      </p>
-      <p>
-        <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
-          clone
-          &lt;url-адрес&gt;</code>
-      </p>
-    </div>
-  </div>
+        <div>
+          <p>
+            Создаёт новый локальный репозиторий с заданным именем
+          </p>
+          <p>
+            <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
+              init
+              &lt;название проекта&gt;</code>
+          </p>
+        </div>
+        <div>
+          <p>
+            Скачивает репозиторий вместе со всей его историей изменений
+          </p>
+          <p>
+            <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
+              clone
+              &lt;url-адрес&gt;</code>
+          </p>
+        </div>
+      </article>
 
-  <!-- File operations -->
-  <div class="block">
-    <a class="anchor" href="#files">
-      <h2 id="files">Операции с файлами</h2>
-    </a>
-    <p class="block__description">
-      Перемещение и удаление версий файлов репозитория
-    </p>
+      <!-- File operations -->
+      <article class="tip">
+        <a class="anchor" href="#files">
+          <h2 id="files">Операции с файлами</h2>
+        </a>
+        <p>
+          Перемещение и удаление версий файлов репозитория
+        </p>
 
-    <hr>
+        <hr>
 
-    <div class="note">
-      <p>
-        Удаляет конкретный файл из рабочей директории и индексирует его удаление
-      </p>
-      <p>
-        <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
-          rm &lt;
-          файл&gt;</code>
-      </p>
-    </div>
-    <div class="note">
-      <p>
-        Убирает конкретный файл из контроля версий, но физически оставляет его
-        на своём месте
-      </p>
-      <p>
-        <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
-          rm
-          --cached &lt;файл&gt;</code>
-      </p>
-    </div>
-    <div class="note">
-      <p>
-        Перемещает и переименовывает указанный файл, сразу индексируя его для
-        последующего коммита
-      </p>
-      <p>
-        <code
-          class="terminal"><span class="terminal__dollar-sign">$ </span>git mv
-          &lt;оригинальный файл&gt; &lt;новое имя&gt;</code>
-      </p>
-    </div>
-  </div>
+        <div>
+          <p>
+            Удаляет конкретный файл из рабочей директории и индексирует его
+            удаление
+          </p>
+          <p>
+            <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
+              rm &lt;
+              файл&gt;</code>
+          </p>
+        </div>
+        <div>
+          <p>
+            Убирает конкретный файл из контроля версий, но физически оставляет
+            его
+            на своём месте
+          </p>
+          <p>
+            <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
+              rm
+              --cached &lt;файл&gt;</code>
+          </p>
+        </div>
+        <div>
+          <p>
+            Перемещает и переименовывает указанный файл, сразу индексируя его
+            для
+            последующего коммита
+          </p>
+          <p>
+            <code
+              class="terminal"><span class="terminal__dollar-sign">$ </span>git
+              mv
+              &lt;оригинальный файл&gt; &lt;новое имя&gt;</code>
+          </p>
+        </div>
+      </article>
 
-  <!-- Ignoring some files -->
-  <div class="block">
-    <a class="anchor" href="#ignore">
-      <h2 id="ignore">Игнорирование некоторых файлов</h2>
-    </a>
-    <p class="block__description">
-      Исключение временных и вторичных файлов и директорий
-    </p>
+      <!-- Ignoring some files -->
+      <article class="tip">
+        <a class="anchor" href="#ignore">
+          <h2 id="ignore">Игнорирование некоторых файлов</h2>
+        </a>
+        <p>
+          Исключение временных и вторичных файлов и директорий
+        </p>
 
-    <hr>
+        <hr>
 
-    <div class="note">
-      <p>
-        Список всех игнорируемых файлов в текущем проекте
-      </p>
-      <p>
-        <code
-          class="terminal"><span class="terminal__dollar-sign">$ </span>git
-          ls-files
-          --others --ignored --exclude-standard</code>
-      </p>
-    </div>
-  </div>
+        <div>
+          <p>
+            Список всех игнорируемых файлов в текущем проекте
+          </p>
+          <p>
+            <code
+              class="terminal"><span class="terminal__dollar-sign">$ </span>git
+              ls-files
+              --others --ignored --exclude-standard</code>
+          </p>
+        </div>
+      </article>
 
-  <!-- Saving fragments -->
-  <div class="block">
-    <a class="anchor" href="#stash">
-      <h2 id="stash">Сохранение фрагментов</h2>
-    </a>
-    <p class="block__description">
-      Сохранение и восстановление незавершённых изменений
-    </p>
+      <!-- Saving fragments -->
+      <article class="tip">
+        <a class="anchor" href="#stash">
+          <h2 id="stash">Сохранение фрагментов</h2>
+        </a>
+        <p>
+          Сохранение и восстановление незавершённых изменений
+        </p>
 
-    <hr>
+        <hr>
 
-    <div class="note">
-      <p>
-        Временно сохраняет все незафиксированные изменения отслеживаемых файлов
-      </p>
-      <p>
-        <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
-          stash</code>
-      </p>
-    </div>
-    <div class="note">
-      <p>
-        Восстанавливает состояние ранее сохранённых версий файлов
-      </p>
-      <p>
-        <code class="terminal">
-          <span class="terminal__dollar-sign">$ </span>git stash pop
-        </code>
-      </p>
-    </div>
-    <div class="note">
-      <p>
-        Выводит список всех временных сохранений
-      </p>
-      <p>
-        <code class="terminal">
-          <span class="terminal__dollar-sign">$ </span>git stash list
-        </code>
-      </p>
-    </div>
-    <div class="note">
-      <p>
-        Сбрасывает последние временно сохранённыe изменения
-      </p>
-      <p>
-        <code class="terminal">
-          <span class="terminal__dollar-sign">$ </span>git stash drop
-        </code>
-      </p>
-    </div>
-  </div>
+        <div>
+          <p>
+            Временно сохраняет все незафиксированные изменения отслеживаемых
+            файлов
+          </p>
+          <p>
+            <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
+              stash</code>
+          </p>
+        </div>
+        <div>
+          <p>
+            Восстанавливает состояние ранее сохранённых версий файлов
+          </p>
+          <p>
+            <code class="terminal">
+              <span class="terminal__dollar-sign">$ </span>git stash pop
+            </code>
+          </p>
+        </div>
+        <div>
+          <p>
+            Выводит список всех временных сохранений
+          </p>
+          <p>
+            <code class="terminal">
+              <span class="terminal__dollar-sign">$ </span>git stash list
+            </code>
+          </p>
+        </div>
+        <div>
+          <p>
+            Сбрасывает последние временно сохранённыe изменения
+          </p>
+          <p>
+            <code class="terminal">
+              <span class="terminal__dollar-sign">$ </span>git stash drop
+            </code>
+          </p>
+        </div>
+      </article>
 
-  <!-- Making changes -->
-  <div class="block">
-    <a class="anchor" href="#changes">
-      <h2 id="changes">Внесение изменений</h2>
-    </a>
-    <p class="block__description">
-      Просмотр изменений и создание коммитов (фиксация изменений)
-    </p>
+      <!-- Making changes -->
+      <article class="tip">
+        <a class="anchor" href="#changes">
+          <h2 id="changes">Внесение изменений</h2>
+        </a>
+        <p>
+          Просмотр изменений и создание коммитов (фиксация изменений)
+        </p>
 
-    <hr>
+        <hr>
 
-    <div class="note">
-      <p>
-        Перечисляет все новые или изменённые файлы, которые нуждаются в фиксации
-      </p>
-      <p>
-        <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
-          status</code>
-      </p>
-    </div>
-    <div class="note">
-      <p>
-        Показывает различия по внесённым изменениям в ещё не проиндексированных
-        файлах
-      </p>
-      <p>
-        <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
-          diff</code>
-      </p>
-    </div>
-    <div class="note">
-      <p>
-        Индексирует указанный файл для последующего коммита
-      </p>
-      <p>
-        <code class="terminal">
-          <span class="terminal__dollar-sign">$ </span>git add &lt;файл&gt;
-        </code>
-      </p>
-    </div>
-    <div class="note">
-      <p>
-        Показывает различия между проиндексированной и последней зафиксированной
-        версиями файлов
-      </p>
-      <p>
-        <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
-          diff
-          --staged</code>
-      </p>
-    </div>
-    <div class="note">
-      <p>
-        Отменяет индексацию указанного файла, при этом сохраняет его содержимое
-      </p>
-      <p>
-        <code class="terminal">
-          <span class="terminal__dollar-sign">$ </span>git reset &lt;файл&gt;
-        </code>
-      </p>
-    </div>
-    <div class="note">
-      <p>
-        Фиксирует проиндексированные изменения и сохраняет их в историю версий
-      </p>
-      <p>
-        <code class="terminal">
-          <span class="terminal__dollar-sign">$ </span>git commit -m '&lt;
-          сообщение с описанием&gt;'
-        </code>
-      </p>
-    </div>
-  </div>
+        <div>
+          <p>
+            Перечисляет все новые или изменённые файлы, которые нуждаются в
+            фиксации
+          </p>
+          <p>
+            <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
+              status</code>
+          </p>
+        </div>
+        <div>
+          <p>
+            Показывает различия по внесённым изменениям в ещё не
+            проиндексированных
+            файлах
+          </p>
+          <p>
+            <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
+              diff</code>
+          </p>
+        </div>
+        <div>
+          <p>
+            Индексирует указанный файл для последующего коммита
+          </p>
+          <p>
+            <code class="terminal">
+              <span class="terminal__dollar-sign">$ </span>git add &lt;файл&gt;
+            </code>
+          </p>
+        </div>
+        <div>
+          <p>
+            Показывает различия между проиндексированной и последней
+            зафиксированной
+            версиями файлов
+          </p>
+          <p>
+            <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
+              diff
+              --staged</code>
+          </p>
+        </div>
+        <div>
+          <p>
+            Отменяет индексацию указанного файла, при этом сохраняет его
+            содержимое
+          </p>
+          <p>
+            <code class="terminal">
+              <span class="terminal__dollar-sign">$ </span>git reset &lt;файл&gt;
+            </code>
+          </p>
+        </div>
+        <div>
+          <p>
+            Фиксирует проиндексированные изменения и сохраняет их в историю
+            версий
+          </p>
+          <p>
+            <code class="terminal">
+              <span class="terminal__dollar-sign">$ </span>git commit -m '&lt;
+              сообщение с описанием&gt;'
+            </code>
+          </p>
+        </div>
+      </article>
 
-  <!-- Teamwork -->
-  <div class="block">
-    <a class="anchor" href="#teamwork">
-      <h2 id="teamwork">Коллективная работа</h2>
-    </a>
-    <p class="block__description">
-      Именованные серии коммитов и соединение результатов работы
-    </p>
+      <!-- Teamwork -->
+      <article class="tip">
+        <a class="anchor" href="#teamwork">
+          <h2 id="teamwork">Коллективная работа</h2>
+        </a>
+        <p>
+          Именованные серии коммитов и соединение результатов работы
+        </p>
 
-    <hr>
+        <hr>
 
-    <div class="note">
-      <p>
-        Список именованных веток коммитов с указанием выбранной ветки
-      </p>
-      <p>
-        <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
-          branch</code>
-      </p>
-    </div>
-    <div class="note">
-      <p>
-        Создаёт новую ветку
-      </p>
-      <p>
-        <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
-          branch
-          &lt;имя ветки&gt;</code>
-      </p>
-    </div>
-    <div class="note">
-      <p>
-        Переключается на выбранную ветку и обновляет рабочую директорию до её
-        состояния
-      </p>
-      <p>
-        <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
-          switch -c
-          &lt;имя ветки&gt;</code>
-      </p>
-    </div>
-    <div class="note">
-      <p>
-        Вносит изменения указанной ветки в текущую ветку
-      </p>
-      <p>
-        <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
-          merge &lt;имя
-          ветки&gt;</code>
-      </p>
-    </div>
-    <div class="note">
-      <p>
-        Удаляет выбранную ветку
-      </p>
-      <p>
-        <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
-          branch -d
-          &lt;имя ветки&gt;</code>
-      </p>
-    </div>
-  </div>
+        <div>
+          <p>
+            Список именованных веток коммитов с указанием выбранной ветки
+          </p>
+          <p>
+            <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
+              branch</code>
+          </p>
+        </div>
+        <div>
+          <p>
+            Создаёт новую ветку
+          </p>
+          <p>
+            <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
+              branch
+              &lt;имя ветки&gt;</code>
+          </p>
+        </div>
+        <div>
+          <p>
+            Переключается на выбранную ветку и обновляет рабочую директорию до
+            её
+            состояния
+          </p>
+          <p>
+            <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
+              switch -c
+              &lt;имя ветки&gt;</code>
+          </p>
+        </div>
+        <div>
+          <p>
+            Вносит изменения указанной ветки в текущую ветку
+          </p>
+          <p>
+            <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
+              merge &lt;имя
+              ветки&gt;</code>
+          </p>
+        </div>
+        <div>
+          <p>
+            Удаляет выбранную ветку
+          </p>
+          <p>
+            <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
+              branch -d
+              &lt;имя ветки&gt;</code>
+          </p>
+        </div>
+      </article>
 
-  <!-- History view -->
-  <div class="block">
-    <a class="anchor" href="#history">
-      <h2 id="history">Просмотр истории</h2>
-    </a>
-    <p class="block__description">
-      Просмотр и изучение истории изменений файлов проекта
-    </p>
+      <!-- History view -->
+      <article class="tip">
+        <a class="anchor" href="#history">
+          <h2 id="history">Просмотр истории</h2>
+        </a>
+        <p>
+          Просмотр и изучение истории изменений файлов проекта
+        </p>
 
-    <hr>
+        <hr>
 
-    <div class="note">
-      <p>
-        История коммитов для текущей ветки
-      </p>
-      <p>
-        <code
-          class="terminal"><span class="terminal__dollar-sign">$ </span>git log
-          [--oneline] # [упрощённый вид]</code>
-      </p>
-    </div>
-    <div class="note">
-      <p>
-        История изменений конкретного файла, включая его переименование
-      </p>
-      <p>
-        <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
-          log
-          --follow &lt;файл&gt;</code>
-      </p>
-    </div>
-    <div class="note">
-      <p>
-        Показывает разницу между содержанием коммитов двух веток
-      </p>
-      <p>
-        <code
-          class="terminal"><span class="terminal__dollar-sign">$ </span>git diff
-          &lt;первая
-          ветка&gt;...&lt;вторая ветка&gt;</code>
-      </p>
-    </div>
-    <div class="note">
-      <p>
-        Выводит информацию и показывает изменения в выбранном коммите
-      </p>
-      <p>
-        <code class="terminal">
-          <span class="terminal__dollar-sign">$ </span>git show &lt;коммит&gt;
-        </code>
-      </p>
-    </div>
-  </div>
+        <div>
+          <p>
+            История коммитов для текущей ветки
+          </p>
+          <p>
+            <code
+              class="terminal"><span class="terminal__dollar-sign">$ </span>git
+              log
+              [--oneline] # [упрощённый вид]</code>
+          </p>
+        </div>
+        <div>
+          <p>
+            История изменений конкретного файла, включая его переименование
+          </p>
+          <p>
+            <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
+              log
+              --follow &lt;файл&gt;</code>
+          </p>
+        </div>
+        <div>
+          <p>
+            Показывает разницу между содержанием коммитов двух веток
+          </p>
+          <p>
+            <code
+              class="terminal"><span class="terminal__dollar-sign">$ </span>git
+              diff
+              &lt;первая
+              ветка&gt;...&lt;вторая ветка&gt;</code>
+          </p>
+        </div>
+        <div>
+          <p>
+            Выводит информацию и показывает изменения в выбранном коммите
+          </p>
+          <p>
+            <code class="terminal">
+              <span class="terminal__dollar-sign">$ </span>git show &lt;коммит&gt;
+            </code>
+          </p>
+        </div>
+      </article>
 
-  <!-- Commit restore -->
-  <div class="block">
-    <a class="anchor" href="#reset">
-      <h2 id="reset">Откат коммитов</h2>
-    </a>
-    <p class="block__description">
-      Удаление ошибок и корректировка созданной истории
-    </p>
+      <!-- Commit restore -->
+      <article class="tip">
+        <a class="anchor" href="#reset">
+          <h2 id="reset">Откат коммитов</h2>
+        </a>
+        <p>
+          Удаление ошибок и корректировка созданной истории
+        </p>
 
-    <hr>
+        <hr>
 
-    <div class="note">
-      <p>
-        Отменяет все коммиты после заданного, оставляя все изменения в рабочей
-        директории
-      </p>
-      <p>
-        <code class="terminal">
-          <span class="terminal__dollar-sign">$ </span>git reset &lt;коммит&gt;
-        </code>
-      </p>
-    </div>
-    <div class="note">
-      <p>
-        Сбрасывает всю историю вместе с состоянием рабочей директории до
-        указанного коммита
-      </p>
-      <p>
-        <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
-          reset
-          --hard &lt;коммит&gt;</code>
-      </p>
-    </div>
-  </div>
+        <div>
+          <p>
+            Отменяет все коммиты после заданного, оставляя все изменения в
+            рабочей
+            директории
+          </p>
+          <p>
+            <code class="terminal">
+              <span class="terminal__dollar-sign">$ </span>git reset &lt;коммит&gt;
+            </code>
+          </p>
+        </div>
+        <div>
+          <p>
+            Сбрасывает всю историю вместе с состоянием рабочей директории до
+            указанного коммита
+          </p>
+          <p>
+            <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
+              reset
+              --hard &lt;коммит&gt;</code>
+          </p>
+        </div>
+      </article>
 
-  <!-- Synchronization with a remote repository -->
-  <div class="block">
-    <a class="anchor" href="#remote">
-      <h2 id="remote">Синхронизация с удалённым репозиторием</h2>
-    </a>
-    <p class="block__description">
-      Регистрация удалённого репозитория и обмен изменениями
-    </p>
+      <!-- Synchronization with a remote repository -->
+      <article class="tip">
+        <a class="anchor" href="#remote">
+          <h2 id="remote">Синхронизация с удалённым репозиторием</h2>
+        </a>
+        <p>
+          Регистрация удалённого репозитория и обмен изменениями
+        </p>
 
-    <hr>
+        <hr>
 
-    <div class="note">
-      <p>
-        Скачивает всю историю из удалённого репозитория
-      </p>
-      <p>
-        <code class="terminal">
-          <span class="terminal__dollar-sign">$ </span>git fetch &lt;удалённый
-          репозиторий&gt;
-        </code>
-      </p>
+        <div>
+          <p>
+            Скачивает всю историю из удалённого репозитория
+          </p>
+          <p>
+            <code class="terminal">
+              <span class="terminal__dollar-sign">$ </span>git fetch &lt;удалённый
+              репозиторий&gt;
+            </code>
+          </p>
+        </div>
+        <div>
+          <p>
+            Вносит изменения из ветки удалённого репозитория в текущую ветку
+            локального репозитория
+          </p>
+          <p>
+            <code
+              class="terminal"><span class="terminal__dollar-sign">$ </span>git
+              merge &lt;удалённый
+              репозиторий&gt;/&lt;ветка&gt;</code>
+          </p>
+        </div>
+        <div>
+          <p>
+            Загружает все изменения локальной ветки в удалённый репозиторий
+          </p>
+          <p>
+            <code class="terminal">
+              <span class="terminal__dollar-sign">$ </span>git push &lt;удалённый
+              репозиторий&gt;
+              &lt;ветка&gt;
+            </code>
+          </p>
+        </div>
+        <div>
+          <p>
+            Загружает историю из удалённого репозитория и объединяет её с
+            локальной.
+            pull = fetch + merge
+          </p>
+          <p>
+            <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
+              pull</code>
+          </p>
+        </div>
+      </article>
     </div>
-    <div class="note">
-      <p>
-        Вносит изменения из ветки удалённого репозитория в текущую ветку
-        локального репозитория
-      </p>
-      <p>
-        <code
-          class="terminal"><span class="terminal__dollar-sign">$ </span>git
-          merge &lt;удалённый
-          репозиторий&gt;/&lt;ветка&gt;</code>
-      </p>
-    </div>
-    <div class="note">
-      <p>
-        Загружает все изменения локальной ветки в удалённый репозиторий
-      </p>
-      <p>
-        <code class="terminal">
-          <span class="terminal__dollar-sign">$ </span>git push &lt;удалённый
-          репозиторий&gt;
-          &lt;ветка&gt;
-        </code>
-      </p>
-    </div>
-    <div class="note">
-      <p>
-        Загружает историю из удалённого репозитория и объединяет её с локальной.
-        pull = fetch + merge
-      </p>
-      <p>
-        <code class="terminal"><span class="terminal__dollar-sign">$ </span>git
-          pull</code>
-      </p>
-    </div>
-  </div>
+  </section>
 
-  <div class="ad block">
+  <aside class="ad ad-index">
     <p>🙂 Тут могла быть Ваша реклама 🙃</p>
-  </div>
+  </aside>
 
   <form class="feedback-form" action="mailto:dmitriimishutin@gmail.com"
         method="GET" target="_blank" spellcheck="false" autocomplete="off">

@@ -1,9 +1,9 @@
 @use "../common";
 
 
-$-border-fill: solid #eee;
+$-border-color: #eee;
 
-%feedback-input {
+%-feedback-input {
   display: inline-block;
   border-radius: 3px;
   padding: 10px 20px;
@@ -21,18 +21,24 @@ $-border-fill: solid #eee;
     }
 
     textarea {
-      @extend %feedback-input;
+      @extend %-feedback-input;
 
       margin: 10px auto;
-      border: 1px $-border-fill;
+
+      border-width: 1px;
+      border-style: solid;
+      border-color: $-border-color;
     }
   }
 
   #{&}__submit {
-    @extend %feedback-input;
+    @extend %-feedback-input;
 
-    margin: 1vh auto;
-    border: 3px $-border-fill;
+    margin-top: 5px;
+
+    border-width: 3px;
+    border-style: solid;
+    border-color: $-border-color;
   }
 }
 
