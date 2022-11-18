@@ -10,10 +10,10 @@ $-border-fill: solid #eee;
 }
 
 .feedback-form {
+  @extend %text-center;
+
   padding-top: 3vh;
   margin: auto;
-
-  @extend %text-center;
 
   #{&}__input-section {
     label {
@@ -21,18 +21,18 @@ $-border-fill: solid #eee;
     }
 
     textarea {
+      @extend %feedback-input;
+
       margin: 10px auto;
       border: 1px $-border-fill;
-
-      @extend %feedback-input;
     }
   }
 
   #{&}__submit {
+    @extend %feedback-input;
+
     margin: 1vh auto;
     border: 3px $-border-fill;
-
-    @extend %feedback-input;
   }
 }
 

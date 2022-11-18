@@ -62,8 +62,8 @@ $-anchor-color: black;
 // AD
 
 .ad {
-  background-color: lightgreen;
-
   @extend %text-center;
+
+  background-color: lightgreen;
 }
 

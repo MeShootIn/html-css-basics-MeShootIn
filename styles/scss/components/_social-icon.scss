@@ -7,10 +7,10 @@
   }
 
   #{&}__icon {
+    @extend %text-center;
+
     width: 36px;
     height: 36px;
-
-    @extend %text-center;
   }
 }
 
