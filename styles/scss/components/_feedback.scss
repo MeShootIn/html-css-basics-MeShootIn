@@ -4,15 +4,16 @@
 $-border-color: #eee;
 
 %-feedback-input {
+  @include common.border($radius: 3px);
+
   display: inline-block;
-  border-radius: 3px;
   padding: 10px 20px;
 }
 
 .feedback-form {
   @extend %text-center;
 
-  padding-top: 3vh;
+  padding-top: 20px;
   margin: auto;
 
   #{&}__input-section {
@@ -21,24 +22,18 @@ $-border-color: #eee;
     }
 
     textarea {
+      @include common.border(1px, $-border-color);
       @extend %-feedback-input;
 
       margin: 10px auto;
-
-      border-width: 1px;
-      border-style: solid;
-      border-color: $-border-color;
     }
   }
 
   #{&}__submit {
+    @include common.border(3px, $-border-color);
     @extend %-feedback-input;
 
     margin-top: 5px;
-
-    border-width: 3px;
-    border-style: solid;
-    border-color: $-border-color;
   }
 }
 

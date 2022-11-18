@@ -1,5 +1,6 @@
 @use "variables";
 @use "extends";
+@use "mixins";
 
 
 // ANCHOR LINK
@@ -30,11 +31,12 @@ $-anchor-color: black;
 // UBUNTU TERMINAL
 
 .terminal {
+  @include mixins.border($radius: 3px);
+
   font-family: 'Ubuntu Mono', monospace;
   background-color: #300a24;
   color: white;
   padding: 5px;
-  border-radius: 3px;
 }
 
 

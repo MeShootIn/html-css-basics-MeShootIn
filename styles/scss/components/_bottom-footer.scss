@@ -8,9 +8,7 @@
   color: gray;
 
   #{&}__hr {
-    border-top-width: 1px;
-    border-top-style: solid;
-    border-top-color: lightgray;
+    @include common.border($width: 1px, $color: lightgray);
   }
 }
 

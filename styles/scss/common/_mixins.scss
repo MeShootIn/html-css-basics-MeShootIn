@@ -1,0 +1,11 @@
+@mixin border($width: 0, $color: black, $radius: 0, $style: solid, $side: '') {
+  @if ($side != '') {
+    $side: '-' + $side;
+  }
+
+  border#{$side}-width: $width;
+  border#{$side}-color: $color;
+  border#{$side}-radius: $radius;
+  border#{$side}-style: $style;
+}
+

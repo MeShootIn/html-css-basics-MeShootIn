@@ -5,13 +5,11 @@
   text-align: right;
 
   blockquote {
+    @include common.border($width: 5px, $color: common.$ubuntu-orange, $side: 'right');
+
     margin: 0;
     quotes: "“" "”" "‘" "’";
     padding-right: 1em;
-
-    border-right-width: 5px;
-    border-right-style: solid;
-    border-right-color: common.$ubuntu-orange;
 
     &::before {
       content: open-quote;

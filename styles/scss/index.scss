@@ -43,14 +43,11 @@ p {
 }
 
 .git-logo {
+  @include common.border(3px, #300a24, 3px);
+
   float: left;
   margin: 7px 7px 7px 0;
   width: 10%;
-
-  border-width: 3px;
-  border-style: solid;
-  border-color: #300a24;
-  border-radius: 3px;
 }
 
 .comparison-table {
@@ -83,9 +80,10 @@ p {
 }
 
 .tip {
+  @include common.border($radius: 5px);
+
   padding: 1em;
   background-color: lightgray;
-  border-radius: 5px;
 
   & * {
     text-indent: 0;
