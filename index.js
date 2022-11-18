@@ -1,3 +1,6 @@
+import tips from './src/tips.js';
+
+
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('.feedback-form');
 
@@ -11,5 +14,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     form.submit();
   });
+
+  const tipTemplateHTML = document
+    .querySelector('#tip-template')
+    .innerHTML;
+  const filledTemplateHTML = _.template(tipTemplateHTML);
+  const tipContainer = document.querySelector('.tip-container');
+
+  tipContainer.innerHTML += filledTemplateHTML({tips});
 });
 
