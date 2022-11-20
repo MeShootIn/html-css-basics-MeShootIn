@@ -1,0 +1,8 @@
+{
+  "name": "html-css-basics-MeShootIn",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/MeShootIn/html-css-basics-MeShootIn.git",
+  "author": "MeShootIn <dmitriimishutin@gmail.com>",
+  "license": "GPL-3.0"
+}
