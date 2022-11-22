@@ -1,7 +1,6 @@
-@use "variables";
-@use "extends";
-@use "mixins";
-
+@use 'variables';
+@use 'extends';
+@use 'mixins';
 
 // ANCHOR LINK
 
@@ -27,7 +26,6 @@ $-anchor-color: black;
   }
 }
 
-
 // UBUNTU TERMINAL
 
 .terminal {
@@ -39,13 +37,11 @@ $-anchor-color: black;
   padding: 5px;
 }
 
-
 // UNSELECTABLE TEXT
 
 .text-unselectable {
   @extend %text-unselectable;
 }
-
 
 // AD
 
@@ -55,4 +51,3 @@ $-anchor-color: black;
   padding: 5px;
   background-color: lightgreen;
 }
-

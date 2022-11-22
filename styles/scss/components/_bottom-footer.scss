@@ -1,5 +1,4 @@
-@use "../common";
-
+@use '../common';
 
 .bottom-footer {
   @extend %text-center;
@@ -11,4 +10,3 @@
     @include common.border($width: 1px, $color: lightgray);
   }
 }
-

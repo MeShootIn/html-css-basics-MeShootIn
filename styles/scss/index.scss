@@ -1,9 +1,8 @@
-@use "common";
-@use "components/quote";
-@use "components/feedback";
-@use "components/bottom-footer";
-@use "components/social-icon";
-
+@use 'common';
+@use 'components/quote';
+@use 'components/feedback';
+@use 'components/bottom-footer';
+@use 'components/social-icon';
 
 body {
   font-family: 'Courier New', Courier, monospace;
@@ -29,7 +28,6 @@ ul {
 p {
   text-indent: 4em;
 }
-
 
 // INTRODUCTION
 
@@ -67,7 +65,6 @@ p {
   }
 }
 
-
 // TIPS
 
 .tips {
@@ -90,10 +87,8 @@ p {
   }
 }
 
-
 // AD
 
 .ad-index {
   margin-top: 10px;
 }
-

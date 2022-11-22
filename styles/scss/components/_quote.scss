@@ -1,14 +1,17 @@
-@use "../common";
-
+@use '../common';
 
 .quote {
   text-align: right;
 
   blockquote {
-    @include common.border($width: 5px, $color: common.$ubuntu-orange, $side: 'right');
+    @include common.border(
+      $width: 5px,
+      $color: common.$ubuntu-orange,
+      $side: 'right'
+    );
 
     margin: 0;
-    quotes: "“" "”" "‘" "’";
+    quotes: '“' '”' '‘' '’';
     padding-right: 1em;
 
     &::before {
@@ -20,4 +23,3 @@
     }
   }
 }
-

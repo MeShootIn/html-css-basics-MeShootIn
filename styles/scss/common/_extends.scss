@@ -15,8 +15,8 @@
   -o-user-select: none;
   user-select: none;
 
-  &::selection, &::-moz-selection {
+  &::selection,
+  &::-moz-selection {
     background: transparent;
   }
 }
-
