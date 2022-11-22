@@ -166,3 +166,7 @@ dist
 
 # End of https://www.toptal.com/developers/gitignore/api/sass,yarn,node
 
+
+
+# Custom ignore
+/styles/css/
