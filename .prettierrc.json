@@ -12,9 +12,9 @@
   "arrowParens": "always",
   "requirePragma": false,
   "insertPragma": false,
-  "insertPragma": false,
   "proseWrap": "preserve",
   "htmlWhitespaceSensitivity": "css",
   "endOfLine": "lf",
+  "embeddedLanguageFormatting": "auto",
   "singleAttributePerLine": false
 }
