@@ -28,11 +28,13 @@
       <h1>Шпаргалка по Git</h1>
 
       <section class="introduction">
+        <h2>Введение</h2>
+
         <div class="introduction-container">
           <!-- Introduction -->
           <section>
             <a class="anchor" href="#description">
-              <h2 id="description">Описание</h2>
+              <h3 id="description">Описание</h3>
             </a>
             <p>
               <img class="git-logo" src="./images/git.svg" alt="git" />
@@ -62,7 +64,7 @@
           <!-- Which web service to choose? -->
           <section>
             <a class="anchor" href="#choice">
-              <h2 id="choice">Какой веб-сервис выбрать?</h2>
+              <h3 id="choice">Какой веб-сервис выбрать?</h3>
             </a>
             <p>
               Разработчики в определенный момент становятся перед выбором, какой
@@ -72,7 +74,7 @@
 
             <div>
               <a class="anchor" href="#choice-gitlab">
-                <h3 id="choice-gitlab">GitLab</h3>
+                <h4 id="choice-gitlab">GitLab</h4>
               </a>
               <p>
                 <strong>GitLab</strong> — это инструмент управления хостингом
@@ -113,7 +115,7 @@
 
             <div>
               <a class="anchor" href="#choice-github">
-                <h3 id="choice-github">GitHub</h3>
+                <h4 id="choice-github">GitHub</h4>
               </a>
               <p>
                 <strong>GitHub</strong> — это инструмент службы размещения
@@ -149,7 +151,7 @@
 
             <div>
               <a class="anchor" href="#your-choice">
-                <h3 id="your-choice">Решать Вам</h3>
+                <h4 id="your-choice">Решать Вам</h4>
               </a>
               <table class="comparison-table">
                 <caption>
@@ -270,7 +272,7 @@
           <!-- Git installation -->
           <section>
             <a class="anchor" href="#installation">
-              <h2 id="installation">Установка Git</h2>
+              <h3 id="installation">Установка Git</h3>
             </a>
             <p>
               GitHub предоставляет оконное приложение с графическим интерфейсом
@@ -282,7 +284,7 @@
 
             <div>
               <a class="anchor" href="#github-desktop">
-                <h3 id="github-desktop">GitHub Desktop</h3>
+                <h4 id="github-desktop">GitHub Desktop</h4>
               </a>
               <p>
                 Дистрибутивы <em>Git</em> для систем Linux и POSIX доступны на
@@ -300,7 +302,7 @@
 
             <div>
               <a class="anchor" href="#all-platforms">
-                <h3 id="all-platforms">Git для всех платформ</h3>
+                <h4 id="all-platforms">Git для всех платформ</h4>
               </a>
               <p>
                 <a
@@ -316,12 +318,14 @@
       </section>
 
       <section class="tips">
+        <h2>Основные операции</h2>
+
         <div class="tip-container">
           <script type="text/template" id="tip-template">
             <% _.each(tips, function(tip, index, list) { %>
             <article class="tip">
               <a class="anchor" href="#tip-<%= index + 1 %>">
-                <h2 id="tip-<%= index + 1 %>"><%= tip.title %></h2>
+                <h3 id="tip-<%= index + 1 %>"><%= tip.title %></h3>
               </a>
               <p><%= tip.description %></p>
 
