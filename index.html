@@ -323,27 +323,27 @@
         <div class="tip-container">
           <script type="text/template" id="tip-template">
             <% _.each(tips, function(tip, index, list) { %>
-            <article class="tip">
-              <a class="anchor" href="#tip-<%= index + 1 %>">
-                <h3 id="tip-<%= index + 1 %>"><%= tip.title %></h3>
-              </a>
-              <p><%= tip.description %></p>
+              <article class="tip">
+                <a class="anchor" href="#tip-<%= index + 1 %>">
+                  <h3 id="tip-<%= index + 1 %>"><%= tip.title %></h3>
+                </a>
+                <p><%= tip.description %></p>
 
-              <hr>
+                <hr>
 
-              <% _.each(tip.usages, function(usage, index, list) { %>
-              <div>
-                <p><%= usage.description %></p>
-                <p>
-                  <code class="terminal">
-                    <span class="text-unselectable">$&nbsp;</span>
-                    <%- usage.command %>
-                  </code>
-                </p>
-              </div>
+                <% _.each(tip.usages, function(usage, index, list) { %>
+                <div>
+                  <p><%= usage.description %></p>
+                  <p>
+                    <code class="terminal">
+                      <span class="text-unselectable">$&nbsp;</span>
+                      <%- usage.command %>
+                    </code>
+                  </p>
+                </div>
+                <% }); %>
+              </article>
               <% }); %>
-            </article>
-            <% }); %>
           </script>
         </div>
       </section>
@@ -415,12 +415,12 @@
       </div>
     </footer>
 
-    <!-- Form data processing script -->
-    <script src="./index.js" type="module"></script>
     <!-- Underscore.js -->
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/underscore@1.13.6/underscore-umd-min.js"
     ></script>
+    <!-- Form data processing script -->
+    <script src="./index.js" type="module"></script>
   </body>
 </html>
