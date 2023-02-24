@@ -5,6 +5,13 @@
   "repository": "https://github.com/MeShootIn/html-css-basics-MeShootIn.git",
   "author": "MeShootIn <dmitriimishutin@gmail.com>",
   "license": "GPL-3.0",
+  "scripts": {
+    "lint:prettier": "prettier --write .",
+    "lint": "npm run check:editorconfig && npm run lint:prettier",
+    "check:editorconfig": "editorconfig-checker",
+    "check:prettier": "prettier --check .",
+    "check": "npm run check:editorconfig && npm run check:prettier"
+  },
   "devDependencies": {
     "editorconfig-checker": "^5.0.1",
     "live-server": "^1.2.2",
