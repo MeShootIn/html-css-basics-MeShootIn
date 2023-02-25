@@ -6,11 +6,13 @@
   "author": "MeShootIn <dmitriimishutin@gmail.com>",
   "license": "GPL-3.0",
   "scripts": {
-    "lint:prettier": "prettier --write .",
+    "start": "live-server --port=0 --host=0.0.0.0",
+    "scss": "sass --no-error-css --stop-on-error --style=compressed styles/scss:styles/css",
     "lint": "npm run check:editorconfig && npm run lint:prettier",
+    "lint:prettier": "prettier --write .",
+    "check": "npm run check:editorconfig && npm run check:prettier",
     "check:editorconfig": "editorconfig-checker",
-    "check:prettier": "prettier --check .",
-    "check": "npm run check:editorconfig && npm run check:prettier"
+    "check:prettier": "prettier --check ."
   },
   "devDependencies": {
     "editorconfig-checker": "^5.0.1",
