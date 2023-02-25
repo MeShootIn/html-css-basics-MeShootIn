@@ -5,19 +5,11 @@
 1. Клонирование репозитория:
 
 ```bash
-git clone https://github.com/MeShootIn/html-css-basics-MeShootIn.git
+git clone git@github.com:MeShootIn/html-css-basics-MeShootIn.git
 cd html-css-basics-MeShootIn
 ```
 
 2. Установка всех зависимостей:
-
-- через `npm`:
-
-```bash
-npm install
-```
-
-- или через `yarn`:
 
 ```bash
 yarn install
@@ -26,21 +18,13 @@ yarn install
 3. Компиляция SCSS в CSS:
 
 ```bash
-sass --no-error-css --stop-on-error --style=compressed styles/scss:styles/css
+yarn run scss
 ```
 
 4. Запуск локального сервера:
 
-- через `npm`:
-
 ```bash
-npm live-server --port=0 --host=0.0.0.0
-```
-
-- через `yarn`:
-
-```bash
-yarn live-server --port=0 --host=0.0.0.0
+yarn run start
 ```
 
 ## 📋 Условия
